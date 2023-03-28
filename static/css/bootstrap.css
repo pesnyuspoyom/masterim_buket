@@ -4898,7 +4898,7 @@ textarea.form-control-lg {
 
 .accordion {
     --bs-accordion-color: #839496;
-    --bs-accordion-bg: #002b36;
+    --bs-accordion-bg: rgba(47, 68, 39, 0.89);
     --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
     --bs-accordion-border-color: var(--bs-border-color);
     --bs-accordion-border-width: 1px;
