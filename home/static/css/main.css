@@ -1,0 +1,72 @@
+.img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-left: 20px;
+}
+
+.nav {
+    background-color: rgba(47, 68, 39, 0.89);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav img {
+    text-align: center;
+    margin-left: -85px;
+    max-width: 40%;
+    height: auto;
+    display: block;
+}
+
+body {
+    background-image: url("../img/forest.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("../img/снег.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    animation: snowfall 10s linear infinite;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("../img/снег.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    animation: snowfall 10s linear infinite;
+    animation-delay: 0s; /* задержка в 5 секунд для второго псевдоэлемента */
+}
+
+/* анимация падающих снежинок */
+@keyframes snowfall {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
