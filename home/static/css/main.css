@@ -6,6 +6,14 @@
     margin-left: 20px;
 }
 
+.master_buket {
+    max-width: 850px;
+    height: 250px;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-left: 20px;
+}
+
 .img2 {
     width: 64px;
     height: 64px;
@@ -25,8 +33,8 @@
 
 .nav img {
     text-align: center;
-    margin-left: -85px;
-    max-width: 40%;
+    margin-left: 0;
+    max-width: 60%;
     height: auto;
     display: block;
 }

@@ -132,15 +132,8 @@
                              data-bs-parent="#accordionExample2" style="">
                             <div class="accordion-body">
                                 <strong>
-                                    <ya-tr-span data-index="291-0" data-translated="true" data-source-lang="en"
-                                                data-target-lang="ru"
-                                                data-value="This is the first item's accordion body."
-                                                data-translation="Это корпус первого предмета в виде гармошки."
-                                                data-ch="0"
-                                                data-type="trSpan" data-selected="false">
-                                        <img src="{% static 'img/../static/jpg/Женя с бокалом.jpg' %}"
-                                             alt="Женя с бокалом шишек" style="max-width: 100%; max-height: 400px;">
-                                    </ya-tr-span>
+                                    <img src="{% static 'img/../static/jpg/Женя с бокалом.jpg' %}"
+                                         alt="Женя с бокалом шишек" style="max-width: 100%; max-height: 400px;">
                                 </strong>
                             </div>
                         </div>
@@ -149,28 +142,16 @@
                         <h2 class="accordion-header" id="headingTwo2">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
-                                <ya-tr-span data-index="292-0" data-translated="true" data-source-lang="en"
-                                            data-target-lang="ru"
-                                            data-value=" Accordion Item #2 "
-                                            data-translation=" Предмет № 2 для аккордеона "
-                                            data-ch="0" data-type="trSpan" data-selected="false"> Вот венок и свечки<br>ничего
-                                    не подумайте, мы не ритуальное агенство
-                                </ya-tr-span>
+                                Вот венок и свечки<br>ничего
+                                не подумайте, мы не ритуальное агенство
                             </button>
                         </h2>
                         <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2"
                              data-bs-parent="#accordionExample2" style="">
                             <div class="accordion-body">
                                 <strong>
-                                    <ya-tr-span data-index="100-0" data-translated="true" data-source-lang="en"
-                                                data-target-lang="ru"
-                                                data-value="This is the second item's accordion body."
-                                                data-translation="Это корпус второго предмета в виде гармошки."
-                                                data-ch="0"
-                                                data-type="trSpan"><img
-                                            src="{% static 'img/../static/jpg/венок и свечки.jpg' %}"
-                                            alt="Венок и свечки" style="max-width: 100%; max-height: 460px;">
-                                    </ya-tr-span>
+                                    <img src="{% static 'img/../static/jpg/венок и свечки.jpg' %}" alt="Венок и свечки"
+                                         style="max-width: 100%; max-height: 460px;">
                                 </strong>
                             </div>
                         </div>
@@ -193,14 +174,9 @@
                              data-bs-parent="#accordionExample2" style="">
                             <div class="accordion-body">
                                 <strong>
-                                    <ya-tr-span data-index="101-0" data-translated="true" data-source-lang="en"
-                                                data-target-lang="ru"
-                                                data-value="This is the third item's accordion body."
-                                                data-translation="Это корпус-гармошка третьего предмета." data-ch="0"
-                                                data-type="trSpan"><img
+                                    <img
                                             src="{% static 'img/../static/jpg/подарок венок.jpg' %}"
                                             alt="Венок и свечки" style="max-width: 100%; max-height: 465px;">
-                                    </ya-tr-span>
                                 </strong>
                             </div>
                         </div>
@@ -232,7 +208,7 @@
                 необходимости.</h2>
 
             <div class="icon-with-heading">
-                <img src="{% static 'svg/человек.svg' %}" alt="Tree Icon" class="icon">
+                <img src="{% static 'svg/грузовик.svg' %}" alt="Tree Icon" class="icon" style="width: 75px">
                 <h2 style="color: rgb(255,255,255); font-family: 'Zen Antique Soft', cursive, sans-serif;">
                     ДОСТАВКА И УПАКОВКА</h2>
             </div>
@@ -356,7 +332,8 @@
                                                                    alt="Tree Icon" class="icon2">
                             </ya-tr-span>
                         </h4>
-                        <a href="" class="btn btn-link" style="margin-top: 30px">Смотреть в каталоге</a>
+                        <a href="{% url 'catalog' %}" class="btn btn-link" style="margin-top: 30px">Смотреть в
+                            каталоге</a>
                     </div>
                 </div>
 
@@ -376,7 +353,8 @@
                                                                    alt="Tree Icon" class="icon2">
                             </ya-tr-span>
                         </h4>
-                        <a href="" class="btn btn-link" style="margin-top: 30px">Смотреть в каталоге</a>
+                        <a href="{% url 'catalog' %}" class="btn btn-link" style="margin-top: 30px">Смотреть в
+                            каталоге</a>
                     </div>
                 </div>
 
@@ -437,7 +415,8 @@
                                                                    alt="Tree Icon" class="icon2">
                             </ya-tr-span>
                         </h4>
-                        <a href="" class="btn btn-link" style="margin-top: 30px">Смотреть в каталоге</a>
+                        <a href="{% url 'catalog' %}" class="btn btn-link" style="margin-top: 30px">Смотреть в
+                            каталоге</a>
                     </div>
                 </div>
 
@@ -457,7 +436,8 @@
                                                                    alt="Tree Icon" class="icon2">
                             </ya-tr-span>
                         </h4>
-                        <a href="" class="btn btn-link" style="margin-top: 30px">Смотреть в каталоге</a>
+                        <a href="{% url 'catalog' %}" class="btn btn-link" style="margin-top: 30px">Смотреть в
+                            каталоге</a>
                     </div>
                 </div>
 
@@ -523,7 +503,8 @@
                                                                    alt="Tree Icon" class="icon2">
                             </ya-tr-span>
                         </h4>
-                        <a href="" class="btn btn-link" style="margin-top: 30px">Смотреть в каталоге</a>
+                        <a href="{% url 'catalog' %}" class="btn btn-link" style="margin-top: 30px">Смотреть в
+                            каталоге</a>
                     </div>
                 </div>
 
@@ -543,7 +524,8 @@
                                                                    alt="Tree Icon" class="icon2">
                             </ya-tr-span>
                         </h4>
-                        <a href="" class="btn btn-link" style="margin-top: 30px">Смотреть в каталоге</a>
+                        <a href="{% url 'catalog' %}" class="btn btn-link" style="margin-top: 30px">Смотреть в
+                            каталоге</a>
                     </div>
                 </div>
 
@@ -728,7 +710,8 @@
                                                                    alt="Tree Icon" class="icon2">
                             </ya-tr-span>
                         </h4>
-                        <a href="" class="btn btn-link" style="margin-top: 30px">Смотреть в каталоге</a>
+                        <a href="{% url 'catalog' %}" class="btn btn-link" style="margin-top: 30px">Смотреть в
+                            каталоге</a>
                     </div>
                 </div>
 
@@ -748,7 +731,8 @@
                                                                    alt="Tree Icon" class="icon2">
                             </ya-tr-span>
                         </h4>
-                        <a href="" class="btn btn-link" style="margin-top: 30px">Смотреть в каталоге</a>
+                        <a href="{% url 'catalog' %}" class="btn btn-link" style="margin-top: 30px">Смотреть в
+                            каталоге</a>
                     </div>
                 </div>
 
@@ -771,7 +755,8 @@
                                                                    alt="Tree Icon" class="icon2">
                             </ya-tr-span>
                         </h4>
-                        <a href="" class="btn btn-link" style="margin-top: 30px">Смотреть в каталоге</a>
+                        <a href="{% url 'catalog' %}" class="btn btn-link" style="margin-top: 30px">Смотреть в
+                            каталоге</a>
                     </div>
                 </div>
 
@@ -792,7 +777,8 @@
                                     alt="Tree Icon" class="icon2">
                             </ya-tr-span>
                         </h4>
-                        <a href="" class="btn btn-link" style="margin-top: 30px">Смотреть в каталоге</a>
+                        <a href="{% url 'catalog' %}" class="btn btn-link" style="margin-top: 30px">Смотреть в
+                            каталоге</a>
                     </div>
                 </div>
 
@@ -804,8 +790,6 @@
 
 
         </div>
-
-
 
 
         <div class="div_what_me2" style="max-width: 100%; margin: 30px auto 0;">
