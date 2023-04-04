@@ -1,50 +1,67 @@
 .nav img {
-    height: auto;
-    display: block;
-    max-width: 100%;
+    width: 500px;
 }
 
 .nav {
-    background-color: rgba(47, 68, 39, 0.89);
-    text-align: center;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    background-color: rgba(47, 68, 39, 0.89);
 }
 
 .master_buket {
     display: flex;
     align-items: center;
+    width: 100px;
 }
 
 .btn-group1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
+    margin-right: 20px;
 }
 
+.btn-group1 button {
+    width: 100%;
+    font-size: 20px;
+    padding: 8px 10px;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
 @media (max-width: 768px) {
-  .nav {
-    flex-direction: column;
-  }
+    .nav img {
+        width: 300px;
+    }
 
-  .master_buket {
-    margin-bottom: 10px;
-  }
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(47, 68, 39, 0.89);
+    }
 
-  .btn-group1 {
-    margin-top: 10px;
-  }
+    .master_buket {
+        display: flex;
+        align-items: center;
+        width: 100px;
+    }
 
-  .btn-group1 button {
-    font-size: 14px;
-  }
+    .btn-group1 {
+        width: 30%;
+        margin-right: 20px;
+    }
 
-  .dropdown-menu {
-    left: 0;
-    right: 0;
-  }
+    .btn-group1 button {
+
+        font-size: 11px;
+        padding: 8px 10px;
+        border: none;
+        color: #fff;
+        border-radius: 10px;
+        cursor: pointer;
+    }
 }
 
 
