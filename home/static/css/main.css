@@ -1,18 +1,69 @@
-.img {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    margin-right: 15px;
-    margin-left: 20px;
+.nav img {
+    width: 500px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(47, 68, 39, 0.89);
 }
 
 .master_buket {
-    max-width: 850px;
-    height: 250px;
-    border-radius: 50%;
-    margin-right: 15px;
-    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    width: 100px;
 }
+
+.btn-group1 {
+    margin-right: 20px;
+}
+
+.btn-group1 button {
+    width: 100%;
+    font-size: 20px;
+    padding: 8px 10px;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .nav img {
+        width: 200px;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(47, 68, 39, 0.89);
+    }
+
+    .master_buket {
+        display: flex;
+        align-items: center;
+        width: 100px;
+    }
+
+    .btn-group1 {
+        width: 35%;
+        margin-right: 20px;
+    }
+
+    .btn-group1 button {
+
+        font-size: 11px;
+        padding: 8px 10px;
+        border: none;
+        color: #fff;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}
+
 
 .img2 {
     width: 64px;
@@ -20,23 +71,6 @@
     border-radius: 50%;
     margin-right: 15px;
     margin-left: 20px;
-}
-
-
-.nav {
-    background-color: rgba(47, 68, 39, 0.89);
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.nav img {
-    text-align: center;
-    margin-left: 0;
-    max-width: 60%;
-    height: auto;
-    display: block;
 }
 
 body {
@@ -123,11 +157,18 @@ body::after {
 }
 
 .icon {
-    width: 50px;
+    margin-bottom: 1%;
+    max-width: 30%;
+    margin-left: 2%;
+    width: 45px;
     float: left;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    margin-right: 20px;
+    /*margin-top: auto;*/
+    /*margin-left: auto;*/
+
 }
+
+
 
 .icon2 {
     width: 100%;
@@ -145,8 +186,9 @@ body::after {
 }
 
 .photos {
-
-    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    /*overflow-x: hidden;*/
     max-height: 100%;
     /*position: absolute;*/
     top: 0;
@@ -157,8 +199,8 @@ body::after {
 
 .photo {
     display: none;
-    width: 100%;
-    height: 100%;
+    width: 60%;
+    height: 60%;
     /*object-fit: cover;*/
 }
 
