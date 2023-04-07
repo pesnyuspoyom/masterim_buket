@@ -8,7 +8,8 @@
     {% load static %}
     <div class="container mt-5">
         <div class="row">
-            {#    <div style="display: flex; align-items: center;">#}
+
+            <div style="display: flex; align-items: center;">
             <div class="col-md-8">
                 <div class="accordion" id="accordionExample" style="max-width: 90%; margin: 30px auto 0; ">
                     <div class="accordion-item" style="max-width: 100%;">
@@ -26,6 +27,7 @@
                                     Дарим эмоции и создаем
                                     новогоднее
                                     настроение с помощью живой и ароматной пихты.
+
                                 </strong>
                             </div>
                         </div>
@@ -35,6 +37,7 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 Подробнее о товарах
+
                             </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
@@ -48,10 +51,12 @@
                                     В качестве украшений используем: корицу, натуральный хлопок, сушеные апельсины и
                                     лимоны,
                                     шишки в ассортименте и новогодние украшения различной фактуры.
+
                                 </strong>
                                 А также с этого года делаем композиции из
                                 искусственной
                                 ели высокого качества, чтобы они могли радовать вас долгие годы.
+
                             </div>
                         </div>
                     </div>
@@ -63,6 +68,7 @@
                                 Заказы в 2022 году
                                 больше
                                 не принимаем!
+
                             </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
@@ -86,6 +92,7 @@
                                     aria-expanded="true" aria-controls="collapseOne2">
                                 Вот женя с бокалом
                                 шишек
+
                             </button>
                         </h2>
                         <div id="collapseOne2" class="accordion-collapse collapse show"
@@ -165,7 +172,7 @@
                 необходимости.</h2>
 
             <div class="icon-with-heading">
-                <img src="{% static 'svg/грузовик.svg' %}" alt="Tree Icon" class="icon" style="width: 55px">
+                <img src="{% static 'svg/грузовик.svg' %}" alt="Tree Icon" class="icon" style="width: 75px">
                 <h2 style="color: rgb(255,255,255); font-family: 'Zen Antique Soft', cursive, sans-serif;">
                     ДОСТАВКА И УПАКОВКА</h2>
             </div>
@@ -176,11 +183,13 @@
                 <div class="card text-white bg-success mb-3" style="max-width: 44rem;">
                     <div class="card-header">
                         Вот Женя с оленями
+
                     </div>
                     <div class="card-body">
                         <h4 class="card-title">
                             <img src="{% static 'jpg/Женя с оленями.jpg' %}"
                                  alt="Tree Icon" class="icon2">
+
                         </h4>
                         <p class="card-text">
                             Внимательный зритель сразу
@@ -201,6 +210,7 @@
                         <p class="card-text">
                             Нет-нет, вы не подумайте,
                             они хорошо относятся к домашним животным, да и к любым другим, ведь так?
+
                         </p>
                     </div>
                 </div>
@@ -210,14 +220,13 @@
                 КАКИЕ ТОВАРЫ МОЖНО КУПИТЬ У НАС?
             </h1>
             <div class="icon-with-heading">
-                <img src="{% static 'svg/one.svg' %}" alt="Tree Icon" class="icon">
+                <img src="{% static 'svg/one.svg' %}" alt="Tree Icon" class="icon" style="margin-bottom: 40px">
                 <h2 style="color: rgb(255,255,255); font-family: 'Zen Antique Soft', cursive, sans-serif;">
                     ЁЛОЧКИ, КОМПОЗИЦИИ И ВЕНКИ ИЗ ЖИВОЙ ПИХТЫ ИЛИ СОСНЫ</h2>
-                <button type="button" class="btn btn-light d-block" data-bs-toggle="modal"
-                        data-bs-target="#modal1" style="margin-left: 30px; margin-bottom: 10px">
-                    <img src="{% static 'svg/пол книги.svg' %}">
+                <button type="button" class="btn btn-success d-block" data-bs-toggle="modal"
+                        data-bs-target="#modal1" style="margin-bottom: 40px; margin-right: 20px">
+                    ПОДРОБНЕЕ
                 </button>
-
                 <div class="modal" id="modal1">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
@@ -255,6 +264,7 @@
                         <h4 class="card-title">
                             <img src="{% static 'jpg/сани с шишками.jpg' %}"
                                  alt="Tree Icon" class="icon2">
+
                         </h4>
                         <a href="{% url 'catalog' %}" class="btn btn-link" style="margin-top: 30px">Смотреть в
                             каталоге</a>
@@ -280,11 +290,11 @@
 
             <div class="icon-with-heading">
                 <img src="{% static 'svg/two.svg' %}" alt="Tree Icon" class="icon">
-                <h2 style="color: rgb(255,255,255); font-family: 'Zen Antique Soft', cursive, sans-serif;">
+                <h2 style="color: rgb(255,255,255); font-family: 'Zen Antique Soft', cursive, sans-serif; max-width: 60%">
                     КОМПОЗИЦИИ ИЗ ИСКУССТВЕННОЙ ХВОИ</h2>
-                <button type="button" class="btn btn-light d-block" data-bs-toggle="modal"
-                        data-bs-target="#modal2" style="margin-left: 30px; margin-bottom: 10px">
-                    <img src="{% static 'svg/пол книги.svg' %}">
+                <button type="button" class="btn btn-success d-block" data-bs-toggle="modal"
+                        data-bs-target="#modal2" style="margin-left: 3%">
+                    ПОДРОБНЕЕ
                 </button>
                 <div class="modal" id="modal2">
                     <div class="modal-dialog" role="document">
@@ -293,7 +303,8 @@
                                 <h5 class="modal-title">
                                     КОМПОЗИЦИИ ИЗ ИСКУССТВЕННОЙ ХВОИ
                                 </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Закрыть">
                                     <span aria-hidden="true"></span>
                                 </button>
                             </div>
@@ -346,9 +357,9 @@
                 <img src="{% static 'svg/three.svg' %}" alt="Tree Icon" class="icon">
                 <h2 style="color: rgb(255,255,255); font-family: 'Zen Antique Soft', cursive, sans-serif;">
                     КОРПОРАТИВНЫЕ ПОДАРКИ</h2>
-                <button type="button" class="btn btn-light d-block" data-bs-toggle="modal"
-                        data-bs-target="#modal3" style="margin-left: 30px; margin-bottom: 10px">
-                    <img src="{% static 'svg/пол книги.svg' %}">
+                <button type="button" class="btn btn-success d-block" data-bs-toggle="modal"
+                        data-bs-target="#modal3" style="margin-bottom: 5px; margin-left: 3%; max-width: 50%">
+                    ПОДРОБНЕЕ
                 </button>
                 <div class="modal" id="modal3">
                     <div class="modal-dialog" role="document">
@@ -357,18 +368,21 @@
                                 <h5 class="modal-title">
                                     КОРПОРАТИВНЫЕ ПОДАРКИ
                                 </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Закрыть">
                                     <span aria-hidden="true"></span>
                                 </button>
                             </div>
                             <div class="modal-body">
                                 <h2 class="h2"
                                     style="max-width: 100%; color: rgb(255,255,255); font-family: 'Zen Antique Soft', cursive, sans-serif;">
-                                    В каталоге есть отдельная категория с товарами, которые мы рекомендуем для подарков
+                                    В каталоге есть отдельная категория с товарами, которые мы рекомендуем для
+                                    подарков
                                     сотрудникам, учителям, воспитателям.
 
                                     В такие комплекты сразу входит удобная и красивая упаковка для транспортировки
-                                    (коробки или крафт пакеты), чтобы люди смогли комфортно и без труда довезти подарки
+                                    (коробки или крафт пакеты), чтобы люди смогли комфортно и без труда довезти
+                                    подарки
                                     до дома.
 
                                     Новогодние композиции это всегда уместный подарок в преддверии волшебного
@@ -464,6 +478,7 @@
                                 — в помещении около 7 дней
                                 — на улице до 4 месяцев.
                                 После подсыхания не теряет своей декоративности.
+
                             </strong>
                         </div>
                     </div>
@@ -502,7 +517,8 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingFour3">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFour3" aria-expanded="false" aria-controls="collapseFour3">
+                                    data-bs-target="#collapseFour3" aria-expanded="false"
+                                    aria-controls="collapseFour3">
                                 За сколько нужно
                                 сделать
                                 заказ, чтобы доставили в нужную дату?
@@ -521,6 +537,7 @@
                                     подготовить все необходимые материалы, мы предоставляем скидку 10 % на все
                                     новогодние товары при оформлении предзаказа до 1 декабря 2022 г. Скидка
                                     автоматически рассчитается в корзине, при оформлении заказа.
+
                                 </strong>
                             </div>
                         </div>
@@ -529,15 +546,85 @@
 
             </div>
 
-            <h1 style="max-width: 100%; margin-top: 5%; color: rgb(255,255,255); font-family: 'Monterey Deco', cursive, sans-serif;">
+            <div class="icon-with-heading">
+                <div class="card text-white bg-success mb-3" style="max-width: 30rem;">
+                    <div class="card-header">
+                        Здесь должен быть какой-то пень с шишками, но у меня не
+                        получилось его найти, поэтому здесь Я и Рома, P.S Рома, спасибо, что подкинул)
+
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <img src="{% static 'jpg/рома и я.jpg' %}"
+                                 alt="Tree Icon" class="icon2">
+                        </h4>
+                        <a href="{% url 'catalog' %}" class="btn btn-link" style="margin-top: 30px">Смотреть в
+                            каталоге</a>
+                    </div>
+                </div>
+
+                <div class="card text-white bg-success mb-3" style="max-width: 30rem; margin-left: 20px">
+                    <div class="card-header">
+                        Здесь просто РОМА
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <img src="{% static 'jpg/просто рома.jpg' %}"
+                                 alt="Tree Icon" class="icon2">
+                        </h4>
+                        <a href="{% url 'catalog' %}" class="btn btn-link" style="margin-top: 30px">Смотреть в
+                            каталоге</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="icon-with-heading">
+                <div class="card text-white bg-success mb-3" style="max-width: 30rem;">
+                    <div class="card-header">
+                        Здесь мы герои
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <img src="{% static 'jpg/мы герои.jpg' %}"
+                                 alt="Tree Icon" class="icon2">
+                        </h4>
+                        <a href="{% url 'catalog' %}" class="btn btn-link" style="margin-top: 30px">Смотреть в
+                            каталоге</a>
+                    </div>
+                </div>
+
+                <div class="card text-white bg-success mb-3" style="max-width: 40rem; margin-left: 20px">
+                    <div class="card-header">
+                        We is the best friends in the world
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <img
+                                    src="{% static 'jpg/we is the best friend in the world.jpg' %}"
+                                    alt="Tree Icon" class="icon2">
+                        </h4>
+                        <a href="{% url 'catalog' %}" class="btn btn-link" style="margin-top: 30px">Смотреть в
+                            каталоге</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <h1 style="max-width: 100%; color: rgb(255,255,255); font-family: 'Monterey Deco', cursive, sans-serif;">
                 Отзывы наших дорогих покупателей
             </h1>
-            <div class="photos" style="width: 100%; margin-top: 5%">
 
+
+        </div>
+
+
+        <div class="div_what_me2" style="max-width: 100%; margin: 30px auto 0;">
+            <div class="photos" style="width: 100%; margin-left: 400px">
                 <img class="photo active" src="{% static 'jpg/тетрадь1.png' %}" alt="Photo 1"
-                >
+                     style="height: 500px; width: 500px">
                 <img class="photo" src="{% static 'jpg/тетрадь2.png' %}" alt="Photo 2"
-                >
+                     style="height: 500px; width: 500px">
             </div>
             <div class="pagination-container">
                 <ul class="pagination">
@@ -575,9 +662,7 @@
                 });
             </script>
 
-
         </div>
-
     </div>
-
+    </div>
 {% endblock %}
