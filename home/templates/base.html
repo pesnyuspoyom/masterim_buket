@@ -18,25 +18,44 @@
         <img src="{% static 'img/49645551.png' %}">
     </a>
 
-    <div class="btn-group1">
 
-        <button id="btnGroupDrop4" class="btn btn-success dropdown-toggle"
-                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-        >Как с нами связаться?
-        </button>
-        <div class="dropdown-menu" aria-labelledby="btnGroupDrop4">
-            <a class="dropdown-item" href="https://wa.me/+79017044227">
-                Написать в WhatsApp<br> +7 901 704-42-27
+    <a class="btn btn-success" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+       aria-controls="offcanvasExample" style="margin-right: 2%">
+        Нажмите сюда!
+    </a>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Мастерим букеты для вас</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div style="margin-bottom: 2%">
+                Здесь вы можете выбрать способ связи с нами, а так же посетить наш каталог.
+            </div>
+            <a href="{% url 'catalog' %}" style="margin-top: 10px">
+                <button type="button" class="btn btn-info">Каталог</button>
             </a>
-            <a class="dropdown-item" href="tel:+79017044227">
-                Позвонить<br> +7 901 704-42-27
-            </a>
-            <a class="dropdown-item" href="">
-                Может еще какой-нибудь
-                вариант
-            </a>
+            <div class="dropdown mt-3">
+                <button id="btnGroupDrop4" class="btn btn-success dropdown-toggle"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                >Как с нами связаться?
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop4">
+                    <a class="dropdown-item" href="https://wa.me/+79017044227">
+                        Написать в WhatsApp<br> +7 901 704-42-27
+                    </a>
+                    <a class="dropdown-item" href="tel:+79017044227">
+                        Позвонить<br> +7 901 704-42-27
+                    </a>
+                    <a class="dropdown-item" href="">
+                        Может еще какой-нибудь
+                        вариант
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
+
 </nav>
 
 <div class="">

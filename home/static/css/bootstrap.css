@@ -119,12 +119,12 @@ hr {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     margin-top: 0;
     margin-bottom: 0.5rem;
-    font-weight: 600;
+    font-weight: 570;
     line-height: 1.2;
 }
 
 h1, .h1 {
-    font-size: calc(2.375rem + 2.5vw);
+    font-size: calc(1.775rem + 2.5vw);
 }
 
 @media (min-width: 1200px) {
@@ -6806,7 +6806,7 @@ textarea.form-control-lg {
     --bs-offcanvas-height: 30vh;
     --bs-offcanvas-padding-x: 1rem;
     --bs-offcanvas-padding-y: 1rem;
-    --bs-offcanvas-bg: #073642;
+    --bs-offcanvas-bg: rgba(9, 48, 93, 0.89);
     --bs-offcanvas-border-width: 1px;
     --bs-offcanvas-border-color: #002b36;
     --bs-offcanvas-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);

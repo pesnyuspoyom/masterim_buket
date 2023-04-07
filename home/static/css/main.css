@@ -32,7 +32,7 @@
 
 @media (max-width: 768px) {
     .nav img {
-        width: 300px;
+        width: 200px;
     }
 
     .nav {
@@ -157,15 +157,18 @@ body::after {
 }
 
 .icon {
-    max-width: 20%;
-    margin-left: 6%;
-    width: 40px;
+    margin-bottom: 1%;
+    max-width: 30%;
+    margin-left: 2%;
+    width: 45px;
     float: left;
     margin-right: 20px;
     /*margin-top: auto;*/
     /*margin-left: auto;*/
 
 }
+
+
 
 .icon2 {
     width: 100%;
@@ -183,8 +186,9 @@ body::after {
 }
 
 .photos {
-
-    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    /*overflow-x: hidden;*/
     max-height: 100%;
     /*position: absolute;*/
     top: 0;
@@ -195,8 +199,8 @@ body::after {
 
 .photo {
     display: none;
-    width: 100%;
-    height: 100%;
+    width: 60%;
+    height: 60%;
     /*object-fit: cover;*/
 }
 

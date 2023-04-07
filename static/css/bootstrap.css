@@ -6802,7 +6802,7 @@ textarea.form-control-lg {
     --bs-offcanvas-height: 30vh;
     --bs-offcanvas-padding-x: 1rem;
     --bs-offcanvas-padding-y: 1rem;
-    --bs-offcanvas-bg: #073642;
+    --bs-offcanvas-bg: rgba(7, 54, 66, 0.89);
     --bs-offcanvas-border-width: 1px;
     --bs-offcanvas-border-color: #002b36;
     --bs-offcanvas-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
