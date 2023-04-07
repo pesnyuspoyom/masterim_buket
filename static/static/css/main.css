@@ -1,0 +1,196 @@
+.img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-left: 20px;
+}
+
+.master_buket {
+    max-width: 850px;
+    height: 250px;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-left: 20px;
+}
+
+.img2 {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-left: 20px;
+}
+
+
+.nav {
+    background-color: rgba(47, 68, 39, 0.89);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav img {
+    text-align: center;
+    margin-left: 0;
+    max-width: 60%;
+    height: auto;
+    display: block;
+}
+
+body {
+    background-image: url("../img/forest.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("../img/снег.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    animation: snowfall 10s linear infinite;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("../img/снег.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    animation: snowfall 10s linear infinite;
+    animation-delay: 0s; /* задержка в 5 секунд для второго псевдоэлемента */
+}
+
+/* анимация падающих снежинок */
+@keyframes snowfall {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.div_what_me {
+    background-color: rgba(47, 68, 39, 0.79);
+    text-align: center;
+    /*display: flex;*/
+    align-items: center;
+
+}
+
+@font-face {
+    font-family: 'Monterey Deco';
+    src: url('../fonts/Monteray-Deco.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Tokeely Brookings Schatten';
+    src: url('../fonts/Tokeely_Brookings_Schatten.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Zen Antique Soft';
+    src: url('../fonts/ZenAntiqueSoft-Regular.ttf') format('truetype');
+
+}
+
+.icon-with-heading {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 50px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.icon2 {
+    width: 100%;
+
+}
+
+.icon-with-heading2 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.photos {
+
+    overflow-x: hidden;
+    max-height: 100%;
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 500px; /* высота кнопок переключения */
+}
+
+.photo {
+    display: none;
+    width: 100%;
+    height: 100%;
+    /*object-fit: cover;*/
+}
+
+.photo.active {
+    display: block;
+}
+
+.pagination-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination {
+    /* другие стили */
+}
+
+.page-item {
+    margin-left: auto;
+    display: inline-block;
+}
+
+.page-item.active .page-link {
+    /* другие стили */
+}
+
+.div_what_me2 {
+    overflow-x: hidden;
+    background-color: rgba(47, 68, 39, 0.79);
+    text-align: center;
+    /*display: flex;*/
+    align-items: center;
+
+}
+
