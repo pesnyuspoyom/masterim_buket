@@ -14,12 +14,13 @@ SECRET_KEY = 'django-insecure-c0e8#4v+7i%9k@@zfal%_bk#-7gx)vi*j@!2li4ly=2kx9o^l&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['maksim3912.pythonanywhere.com', ]
+ALLOWED_HOSTS = ['maksim3912.pythonanywhere.com', '127.0.0.1', ]
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'cart',
     'home',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -28,6 +29,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -139,3 +141,5 @@ MEDIA_ROOT = '/home/maksim3912/masterim_buket/media'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CART_SESSION_ID = 'cart'
